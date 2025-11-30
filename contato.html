@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | JASH Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container-nav">
+            <a href="home.html" class="logo">JASH Games</a>
+            <button class="menu-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Fale Conosco</h1>
+
+        <div class="form-container">
+            <p style="text-align:center; margin-bottom:20px;">
+                Envie uma mensagem direta para a nossa equipe.
+            </p>
+
+            <form id="formContato">
+                <div class="form-group">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome aqui..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Seu E-mail</label>
+                    <input type="email" id="email" pattern=".+@.+\..+" placeholder="Ex: seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="5" placeholder="Escreva sua dúvida ou sugestão aqui..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+
+            <div style="margin-top: 30px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                <p>Ou envie um e-mail direto:</p>
+                <a href="mailto:suportejash@gmail.com" style="color: #00ff88; font-weight: bold;">suportejash@gmail.com</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 JASH Games: Sua Biblioteca Pessoal de Jogos</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
